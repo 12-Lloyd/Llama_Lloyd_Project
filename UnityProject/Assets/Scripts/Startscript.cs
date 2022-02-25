@@ -2,26 +2,28 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
-
-public class Restart : MonoBehaviour
+public class Startscript : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.R))
-        {
+        
+    }
+    public void StartGame()
+    {
             SceneManager.LoadScene("GameScene");
-        }
+        
     }
 
+    public void instructionscreen()
+    {
+        SceneManager.LoadScene("Instructionmenu");
+
+    }
 }
-
-
-

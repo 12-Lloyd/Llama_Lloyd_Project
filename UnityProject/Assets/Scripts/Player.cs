@@ -37,11 +37,9 @@ public class Player : MonoBehaviour
         TimerText.text = "Timer : " + timeRemaining.ToString();
 
         if(coin == totalcoins)
-        {
-            if(timeleft<=TimerValue)
-            {
+        {      
                 SceneManager.LoadScene("GameWin");
-            }
+            
         }
         else if(timeleft <=0.1)
         {
