@@ -32,8 +32,9 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timeleft -= Time.deltaTime;
-        timeRemaining = Mathf.FloorToInt(timeleft % 60);
+        timeleft += Time.deltaTime;
+        timeRemaining = Mathf.FloorToInt(timeleft);
+       // timeRemaining = Mathf.FloorToInt(timeleft % 60);
         TimerText.text = "Timer : " + timeRemaining.ToString();
 
         if(coin == totalcoins)
@@ -41,10 +42,10 @@ public class Player : MonoBehaviour
                 SceneManager.LoadScene("GameWin");
             
         }
-        else if(timeleft <=0.1)
-        {
-            SceneManager.LoadScene("GameLose");
-        }
+       // else if(timeleft <=0.1)
+       // {
+       //     SceneManager.LoadScene("GameLose");
+       // }
 
     }
     private void OnTriggerEnter(Collider collision)

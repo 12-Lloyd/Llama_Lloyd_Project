@@ -3236,7 +3236,7 @@ MonoBehaviour:
   coin: 0
   coinText: {fileID: 569604233}
   totalcoins: 60
-  timeleft: 999999
+  timeleft: 0
   timeRemaining: 0
   ScoreText: {fileID: 0}
   TimerText: {fileID: 2006777142}

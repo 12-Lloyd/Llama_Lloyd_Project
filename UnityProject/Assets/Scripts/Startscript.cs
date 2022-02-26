@@ -17,8 +17,7 @@ public class Startscript : MonoBehaviour
     }
     public void StartGame()
     {
-            SceneManager.LoadScene("GameScene");
-        
+        SceneManager.LoadScene("GameScene");      
     }
 
     public void instructionscreen()
